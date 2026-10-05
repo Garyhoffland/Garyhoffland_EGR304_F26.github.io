@@ -6,19 +6,10 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
-
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+A block diagram defines the system architecture of a circuit by mapping signal and power pathways across the design. The diagram identifies the system power source and distributed power levels, maps the signal integration of all sensors and actuators, and highlights key team connections for the addition of other subsystems. 
 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
 
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+## Block Diagram 
+
+!([individual-block-diagram.png]([https://app.diagrams.net/#G1ss8tGdyKgFScxtrTg8XYjz-KSqpVajWb#%7B"pageId"%3A"Gary-Subsystem-ID"%7D)](https://app.diagrams.net/#G1K7cVeONGvs1JF2-irboaDIQh96NWwRIB#%7B"pageId"%3A"Gary-Subsystem-ID"%7D))
