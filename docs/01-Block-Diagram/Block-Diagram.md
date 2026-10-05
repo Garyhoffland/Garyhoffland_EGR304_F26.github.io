@@ -12,4 +12,4 @@ A block diagram defines the system architecture of a circuit by mapping signal a
 
 ## Block Diagram 
 
-!([individual-block-diagram.png]([https://app.diagrams.net/#G1ss8tGdyKgFScxtrTg8XYjz-KSqpVajWb#%7B"pageId"%3A"Gary-Subsystem-ID"%7D)](https://app.diagrams.net/#G1K7cVeONGvs1JF2-irboaDIQh96NWwRIB#%7B"pageId"%3A"Gary-Subsystem-ID"%7D))
+!([Copy of Gary Hoffland Block Diagram.drawio.png]
