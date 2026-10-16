@@ -102,7 +102,7 @@ title: Component Selection
     ![](images/pir_adafruit.png)
 
     * $9.95 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/adafruit-industries-llc/189/5353612)
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/adafruit-industries-llc/189/6827035)
 
     | Pros | Cons |
     | --- | --- |
@@ -189,18 +189,18 @@ title: Component Selection
 
 ## 5. Audio Alert Output
 
-1. Mallory Sonalert AST0827MW-03Q Piezoelectric Transducer
+1. Soberton Inc. PT-1407 Piezoelectric Transducer
 
-    ![](images/ast0827.png)
+    ![](images/pt1407.png)
 
-    * $1.25 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/mallory-sonalert-products-inc/AST0827MW-03Q/1802388)
+    * $1.18 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/soberton-inc/PT-1407/1245311)
 
     | Pros | Cons |
     | --- | --- |
-    | Very low operating current draw ($<10\text{mA}$) | Plays narrower acoustic frequency bands compared to dynamic speakers |
-    | Ultra-compact through-hole PCB surface mount footprint | Requires square wave PWM driving signal from MCU |
-    | High sound pressure level ($85\text{dB}$ at $10\text{cm}$) | |
+    | Standard $5\text{V}$ operating rating with minimal power consumption ($1\text{mA}$) | Plays narrower acoustic frequency bands compared to dynamic speakers |
+    | High acoustic intensity output ($80\text{dB}$ at $10\text{cm}$) | Requires PWM square wave driving signal from MCU |
+    | Compact 13.8mm through-hole PC pin footprint | |
 
 2. 8-Ohm Dynamic Speaker + PN2222A NPN Driver Stage *(Currently In-Stock)*
 
@@ -226,15 +226,6 @@ title: Component Selection
     | Compact 12.2mm through-hole footprint | Plays single-frequency high-pitched tones only |
     | Low operating current draw ($<5\text{mA}$) | Requires separate order and shipping time |
 
-**Choice:** Option 1: Mallory Sonalert AST0827MW-03Q Piezoelectric Transducer
+**Choice:** Option 1: Soberton Inc. PT-1407 Piezoelectric Transducer
 
-**Rationale:** The Mallory Sonalert AST0827MW-03Q is chosen for its compact size, low power consumption ($<10\text{mA}$), and high acoustic output ($85\text{dB}$). Driven directly by a PIC18 PWM output pin (`RA1`) without requiring an external NPN transistor driver stage, it simplifies PCB layout while delivering a clear alert chime when feeding routines trigger.
-
-    | Pros | Cons |
-    | --- | --- |
-    | High sound pressure output ($85\text{dB}$ at $10\text{cm}$) | Higher unit cost |
-    | Standard through-hole pin mounting | Narrow acoustic bandwidth |
-
-**Choice:** Option 1: 8-Ohm Dynamic Speaker (Driven by Kit PN2222A NPN Transistor)
-
-**Rationale:** The 8-Ohm speaker and PN2222A NPN transistor are already on hand in the provided kit. Interfaced to pin `RA1` via the PN2222A with a current-limiting base resistor and flyback protection diode, it produces audible feeding alerts directly driven by the PIC microcontroller's PWM module.
+**Rationale:** The Soberton Inc. PT-1407 is selected for its compact 13.8mm through-hole footprint, low $1\text{mA}$ operating current draw at $5\text{V}$, and $80\text{dB}$ sound output. Driven directly by the PIC18 microcontroller PWM pin (`RA1`), it eliminates the need for a transistor driver stage while providing an audible alert chime when feeding routines are triggered.
