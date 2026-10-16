@@ -155,17 +155,18 @@ title: Component Selection
     | Four independent channels allow scaling multiple sensor inputs | Higher offset voltage compared to modern precision op-amps |
     | Operates directly from a single $+5\text{V}$ supply rail | |
 
-2. TLV2374IN (Texas Instruments Rail-to-Rail Quad Op-Amp)
+2. LMC6484IN/NOPB (Texas Instruments CMOS Quad Rail-to-Rail Op-Amp)
 
-    ![](images/tlv2374.png)
+    ![](images/lmc6484.png)
 
-    * $2.15 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/TLV2374IN/379261)
+    * $2.35 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/LMC6484IN-NOPB/164521)
 
     | Pros | Cons |
     | --- | --- |
-    | True rail-to-rail input and output capability | Requires purchasing new component |
-    | Low supply current ($560\mu\text{A/ch}$) | Higher unit price |
+    | True rail-to-rail input and rail-to-rail output (RRIO) capability | Higher unit price than basic general-purpose op-amps |
+    | Low input bias current ($20\text{fA}$) and single $+5\text{V}$ supply operation | Requires separate purchase and shipping |
+    | 14-pin DIP through-hole package compatible with breadboard testing | |
 
 3. MCP6004-E/P (Microchip Low-Power Quad Op-Amp)
 
