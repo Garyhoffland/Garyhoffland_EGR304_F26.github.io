@@ -8,7 +8,7 @@ title: Component Selection
 
 1. L7805ABV-DG (STMicroelectronics 5V 1.5A Linear Regulator) *(Currently In-Stock)*
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/41/3945936.jpg" width="150" alt="L7805ABV-DG" />
+    ![](images/l7805.png)
 
     * $0.88 / each
     * [STMicroelectronics L7805ABV-DG Datasheet](https://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf)
@@ -22,7 +22,7 @@ title: Component Selection
 
 2. LM2596S-5.0 (Texas Instruments Buck Switching Regulator)
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/36/363497.jpg" width="150" alt="LM2596S-5.0" />
+    ![](images/lm2596.png)
 
     * $2.50 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-5-0-NOPB/363497)
@@ -34,7 +34,7 @@ title: Component Selection
 
 3. UA78M05CKCS (Texas Instruments 5V 500mA Linear Regulator)
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/38/380721.jpg" width="150" alt="UA78M05CKCS" />
+    ![](images/ua78m05.png)
 
     * $0.72 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/UA78M05CKCS/380721)
@@ -54,7 +54,7 @@ title: Component Selection
 
 1. PIC18F57Q43 Curiosity Nano Development Board *(Currently In-Stock)*
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/2030/11833538.jpg" width="150" alt="PIC18F57Q43 Curiosity Nano" />
+    ![](images/pic18.png)
 
     * Pre-selected Course Requirement
     * [PIC18F57Q43 Hardware User Guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf)
@@ -67,7 +67,7 @@ title: Component Selection
 
 2. ATMEGA328P-PU (Microchip 8-bit AVR Microcontroller)
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/19/1914589.jpg" width="150" alt="ATMEGA328P-PU" />
+    ![](images/atmega328.png)
 
     * $2.42 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-PU/1914589)
@@ -79,7 +79,7 @@ title: Component Selection
 
 3. MSP430G2553IN20 (Texas Instruments 16-bit Ultra-Low-Power MCU)
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/22/2258489.jpg" width="150" alt="MSP430G2553IN20" />
+    ![](images/msp430.png)
 
     * $2.10 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/MSP430G2553IN20/2258489)
@@ -99,7 +99,7 @@ title: Component Selection
 
 1. Kit Photoresistor / Light Dependent Resistor (LDR) *(Currently In-Stock)*
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/2180/28230.jpg" width="150" alt="Kit Photoresistor" />
+    ![](images/ldr.png)
 
     * $0.00 (Included in provided kit, Item 18)
     * Generic CdS Photoresistor
@@ -111,7 +111,7 @@ title: Component Selection
 
 2. EKMC1601111 (Panasonic PIR Motion Sensor IC)
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/2601/2601868.jpg" width="150" alt="EKMC1601111" />
+    ![](images/pir_panasonic.png)
 
     * $9.73 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/panasonic-industry/EKMC1601111/2601868)
@@ -123,7 +123,7 @@ title: Component Selection
 
 3. Senba Optical BS512 (Pyroelectric Infrared Radial Sensor)
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/1368/13682974.jpg" width="150" alt="BS512 PIR Sensor" />
+    ![](images/pir_senba.png)
 
     * $2.15 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/senba-sensing-technology-co-ltd/BS512/13682974)
@@ -143,7 +143,7 @@ title: Component Selection
 
 1. LM324N Quad General Purpose Operational Amplifier *(Currently In-Stock)*
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/27/277627.jpg" width="150" alt="LM324N" />
+    ![](images/lm324n.png)
 
     * $0.82 / each
     * [TI LM324N Datasheet](https://www.ti.com/lit/ds/symlink/lm224.pdf)
@@ -157,7 +157,7 @@ title: Component Selection
 
 2. TLV2374IN (Texas Instruments Rail-to-Rail Quad Op-Amp)
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/37/379261.jpg" width="150" alt="TLV2374IN" />
+    ![](images/tlv2374.png)
 
     * $2.15 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/TLV2374IN/379261)
@@ -169,7 +169,7 @@ title: Component Selection
 
 3. MCP6004-E/P (Microchip Low-Power Quad Op-Amp)
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/52/522336.jpg" width="150" alt="MCP6004-E/P" />
+    ![](images/mcp6004.png)
 
     * $0.98 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-E-P/522336)
@@ -189,7 +189,7 @@ title: Component Selection
 
 1. 8-Ohm Dynamic Speaker + PN2222A NPN Driver Stage *(Currently In-Stock)*
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/1500/102-1528-ND.jpg" width="150" alt="8-Ohm Speaker" />
+    ![](images/speaker8ohm.png)
 
     * $0.00 (On hand component & Kit NPN Transistor, Item 10)
     * Standard 8-Ohm, 0.25W Mylar/Paper Cone Speaker
@@ -201,7 +201,7 @@ title: Component Selection
 
 2. TDK PS1240P02BT (Piezoelectric Audio Indicator)
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/93/935924.jpg" width="150" alt="PS1240P02BT Piezo" />
+    ![](images/ps1240.png)
 
     * $0.73 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/tdk/PS1240P02BT/935924)
@@ -213,7 +213,7 @@ title: Component Selection
 
 3. Same Sky CPT-1255C-090 (Piezo Transducer)
 
-    <img src="https://mm.digikey.com/Volume0/PAGE_LOW/2042/102-1175-ND.jpg" width="150" alt="CPT-1255C-090 Piezo" />
+    ![](images/cpt1255.png)
 
     * $1.50 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/same-sky/CPT-1255C-090/1863261)
