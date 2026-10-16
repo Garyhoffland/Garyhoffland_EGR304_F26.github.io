@@ -900,7 +900,7 @@
   
 
 
-<h1 id="component-selection-interaction-audio-alert">Component Selection Interaction &amp; Audio Alert</h1>
+<h1 id="component-selection-interaction-audio-alert">Component Selection - Interaction &amp; Audio Alert</h1>
 <h2 id="1-5v-voltage-regulator-module">1. 5V Voltage Regulator Module</h2>
 <ol>
 <li>
@@ -1081,6 +1081,36 @@
 <h2 id="3-motion-pet-detection-sensor">3. Motion / Pet Detection Sensor</h2>
 <ol>
 <li>
+<p>Adafruit 189 PIR Motion Sensor Module</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/pir_adafruit.png" data-desc-position="bottom"><img alt="" src="images/pir_adafruit.png"></a></p>
+<ul>
+<li>$9.95 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/189/5353612">DigiKey Product Page</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Integrated Fresnel lens and signal conditioning circuitry</td>
+<td>Higher cost per unit</td>
+</tr>
+<tr>
+<td>Provides direct <span class="arithmatex">\(3.3\text{V/5V}\)</span> digital high output upon motion detection</td>
+<td>Larger physical module footprint</td>
+</tr>
+<tr>
+<td>On-board sensitivity and delay time adjustment potentiometers</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
 <p>Kit Photoresistor / Light Dependent Resistor (LDR) <em>(Currently In-Stock)</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/ldr.png" data-desc-position="bottom"><img alt="" src="images/ldr.png"></a></p>
 <ul>
@@ -1097,37 +1127,11 @@
 <tbody>
 <tr>
 <td>On hand; simple voltage divider interface with a <span class="arithmatex">\(10\text{k}\Omega\)</span> resistor</td>
-<td>Sensitive to ambient light variations; requires calibration</td>
+<td>Sensitive to ambient room lighting variations; requires calibration</td>
 </tr>
 <tr>
 <td>Detects light blockage when a pet approaches the feeding dish</td>
 <td>Slower optical response time (<span class="arithmatex">\(20\text{--}30\text{ms}\)</span>)</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>EKMC1601111 (Panasonic PIR Motion Sensor IC)</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/pir_panasonic.png" data-desc-position="bottom"><img alt="" src="images/pir_panasonic.png"></a></p>
-<ul>
-<li>$9.73 / each</li>
-<li><a href="https://www.digikey.com/en/products/detail/panasonic-industry/EKMC1601111/2601868">DigiKey Product Page</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>True passive infrared thermal motion detection</td>
-<td>High cost per unit</td>
-</tr>
-<tr>
-<td>Integrated lens and digital output conditioning</td>
-<td>Requires purchasing new parts and waiting for shipping</td>
 </tr>
 </tbody>
 </table>
@@ -1159,8 +1163,8 @@
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 1: Kit Photoresistor (LDR)</p>
-<p><strong>Rationale:</strong> The kit photoresistor is readily available on hand. Configured in a voltage divider circuit into the LM324N non-inverting op-amp stage, it reliably registers pet proximity when the optical beam or overhead light path above the bowl is obstructed.</p>
+<p><strong>Choice:</strong> Option 1: Adafruit 189 PIR Motion Sensor Module</p>
+<p><strong>Rationale:</strong> The Adafruit 189 PIR Motion Sensor Module provides true infrared thermal detection specifically calibrated for moving bodies (such as pets approaching the bowl). Because it features built-in signal conditioning and adjustable sensitivity potentiometers, it outputs a clean, chatter-free digital high signal directly to the microcontroller without requiring complex software filtering or sensitivity to ambient room light changes.</p>
 <hr>
 <h2 id="4-signal-conditioning-op-amp">4. Signal Conditioning (Op-Amp)</h2>
 <ol>
@@ -1253,10 +1257,40 @@
 </li>
 </ol>
 <p><strong>Choice:</strong> Option 1: Texas Instruments LM324N</p>
-<p><strong>Rationale:</strong> The LM324N is currently on hand in a DIP-14 package. Configured as a non-inverting amplifier, it buffers and scales the photoresistor voltage divider signal into the PIC18F57Q43 <code>RA0</code> (<code>ADC1</code>) input within the <span class="arithmatex">\(0\text{--}3.5\text{V}\)</span> dynamic range without requiring external purchases.</p>
+<p><strong>Rationale:</strong> The LM324N is currently on hand in a DIP-14 package. Configured as a non-inverting buffer/comparator, it conditions auxiliary analog sensor signals into the PIC18F57Q43 <code>RA0</code> (<code>ADC1</code>) input within the <span class="arithmatex">\(0\text{--}3.5\text{V}\)</span> dynamic range without requiring external purchases.</p>
 <hr>
 <h2 id="5-audio-alert-output">5. Audio Alert Output</h2>
 <ol>
+<li>
+<p>Mallory Sonalert AST0827MW-03Q Piezoelectric Transducer</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/ast0827.png" data-desc-position="bottom"><img alt="" src="images/ast0827.png"></a></p>
+<ul>
+<li>$1.25 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/mallory-sonalert-products-inc/AST0827MW-03Q/1802388">DigiKey Product Page</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Very low operating current draw (<span class="arithmatex">\(&lt;10\text{mA}\)</span>)</td>
+<td>Plays narrower acoustic frequency bands compared to dynamic speakers</td>
+</tr>
+<tr>
+<td>Ultra-compact through-hole PCB surface mount footprint</td>
+<td>Requires square wave PWM driving signal from MCU</td>
+</tr>
+<tr>
+<td>High sound pressure level (<span class="arithmatex">\(85\text{dB}\)</span> at <span class="arithmatex">\(10\text{cm}\)</span>)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
 <li>
 <p>8-Ohm Dynamic Speaker + PN2222A NPN Driver Stage <em>(Currently In-Stock)</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/speaker8ohm.png" data-desc-position="bottom"><img alt="" src="images/speaker8ohm.png"></a></p>
@@ -1309,33 +1343,14 @@
 </tbody>
 </table>
 </li>
-<li>
-<p>Same Sky CPT-1255C-090 (Piezo Transducer)</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/cpt1255.png" data-desc-position="bottom"><img alt="" src="images/cpt1255.png"></a></p>
-<ul>
-<li>$1.50 / each</li>
-<li><a href="https://www.digikey.com/en/products/detail/same-sky/CPT-1255C-090/1863261">DigiKey Product Page</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>High sound pressure output (<span class="arithmatex">\(85\text{dB}\)</span> at <span class="arithmatex">\(10\text{cm}\)</span>)</td>
-<td>Higher unit cost</td>
-</tr>
-<tr>
-<td>Standard through-hole pin mounting</td>
-<td>Narrow acoustic bandwidth</td>
-</tr>
-</tbody>
-</table>
-</li>
 </ol>
+<p><strong>Choice:</strong> Option 1: Mallory Sonalert AST0827MW-03Q Piezoelectric Transducer</p>
+<p><strong>Rationale:</strong> The Mallory Sonalert AST0827MW-03Q is chosen for its compact size, low power consumption (<span class="arithmatex">\(&lt;10\text{mA}\)</span>), and high acoustic output (<span class="arithmatex">\(85\text{dB}\)</span>). Driven directly by a PIC18 PWM output pin (<code>RA1</code>) without requiring an external NPN transistor driver stage, it simplifies PCB layout while delivering a clear alert chime when feeding routines trigger.</p>
+<pre><code>| Pros | Cons |
+| --- | --- |
+| High sound pressure output ($85\text{dB}$ at $10\text{cm}$) | Higher unit cost |
+| Standard through-hole pin mounting | Narrow acoustic bandwidth |
+</code></pre>
 <p><strong>Choice:</strong> Option 1: 8-Ohm Dynamic Speaker (Driven by Kit PN2222A NPN Transistor)</p>
 <p><strong>Rationale:</strong> The 8-Ohm speaker and PN2222A NPN transistor are already on hand in the provided kit. Interfaced to pin <code>RA1</code> via the PN2222A with a current-limiting base resistor and flyback protection diode, it produces audible feeding alerts directly driven by the PIC microcontroller's PWM module.</p>
 
