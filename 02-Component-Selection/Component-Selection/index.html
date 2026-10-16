@@ -552,18 +552,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#1-voltage-regulator-module" class="md-nav__link">
+  <a href="#1-5v-voltage-regulator-module" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Voltage Regulator Module
+      1. 5V Voltage Regulator Module
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-microcontroller" class="md-nav__link">
+  <a href="#2-microcontroller-platform" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Microcontroller
+      2. Microcontroller Platform
     </span>
   </a>
   
@@ -833,18 +833,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#1-voltage-regulator-module" class="md-nav__link">
+  <a href="#1-5v-voltage-regulator-module" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Voltage Regulator Module
+      1. 5V Voltage Regulator Module
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-microcontroller" class="md-nav__link">
+  <a href="#2-microcontroller-platform" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Microcontroller
+      2. Microcontroller Platform
     </span>
   </a>
   
@@ -900,11 +900,12 @@
   
 
 
-<h1 id="component-selection-pet-interaction-audio-alert">Component Selection - Pet Interaction &amp; Audio Alert</h1>
-<h2 id="1-voltage-regulator-module">1. Voltage Regulator Module</h2>
+<h1 id="component-selection-pet-interaction-audio-alert">Component Selection Pet Interaction &amp; Audio Alert</h1>
+<h2 id="1-5v-voltage-regulator-module">1. 5V Voltage Regulator Module</h2>
 <ol>
 <li>
-<p><strong>L7805ABV-DG (5V 1.5A Linear Regulator)</strong> <em>(Currently In-Stock)</em></p>
+<p>L7805ABV-DG (STMicroelectronics 5V 1.5A Linear Regulator) <em>(Currently In-Stock)</em></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="regulator_l7805.png" data-desc-position="bottom"><img alt="" src="regulator_l7805.png"></a></p>
 <ul>
 <li>$0.88 / each</li>
 <li><a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf">STMicroelectronics L7805ABV-DG Datasheet</a></li>
@@ -934,7 +935,8 @@
 </table>
 </li>
 <li>
-<p><strong>LM2596S-5.0 (Buck Switching Regulator)</strong></p>
+<p>LM2596S-5.0 (Texas Instruments Buck Switching Regulator)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="regulator_lm2596.png" data-desc-position="bottom"><img alt="" src="regulator_lm2596.png"></a></p>
 <ul>
 <li>$2.50 / each</li>
 <li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-5-0-NOPB/363497">DigiKey Product Page</a></li>
@@ -952,8 +954,34 @@
 <td>Requires external power inductor, catch diode, and filter capacitors</td>
 </tr>
 <tr>
-<td>Low heat generation</td>
+<td>Low heat generation under heavy load</td>
 <td>Higher component count and complex PCB layout footprint</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>UA78M05CKCS (Texas Instruments 5V 500mA Linear Regulator)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="regulator_ua78m05.png" data-desc-position="bottom"><img alt="" src="regulator_ua78m05.png"></a></p>
+<ul>
+<li>$0.72 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/UA78M05CKCS/380721">DigiKey Product Page</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard TO-220 through-hole footprint</td>
+<td>Lower current capacity (<span class="arithmatex">\(500\text{mA}\)</span>) compared to L7805</td>
+</tr>
+<tr>
+<td>Inexpensive and reliable</td>
+<td>Marginally lower thermal overhead</td>
 </tr>
 </tbody>
 </table>
@@ -962,10 +990,11 @@
 <p><strong>Choice:</strong> Option 1: STMicroelectronics L7805ABV-DG</p>
 <p><strong>Rationale:</strong> The L7805ABV-DG is already on hand. Because the subsystem consumes under <span class="arithmatex">\(300\text{mA}\)</span> total continuous current, power dissipation across the regulator is well within safe operating parameters for the TO-220 through-hole package without needing an extra heatsink.</p>
 <hr>
-<h2 id="2-microcontroller">2. Microcontroller</h2>
+<h2 id="2-microcontroller-platform">2. Microcontroller Platform</h2>
 <ol>
 <li>
-<p><strong>PIC18F57Q43 Curiosity Nano Development Board</strong> <em>(Currently In-Stock)</em></p>
+<p>PIC18F57Q43 Curiosity Nano Development Board <em>(Currently In-Stock)</em></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="mcu_pic18.png" data-desc-position="bottom"><img alt="" src="mcu_pic18.png"></a></p>
 <ul>
 <li>Pre-selected Course Requirement</li>
 <li><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf">PIC18F57Q43 Hardware User Guide</a></li>
@@ -993,14 +1022,67 @@
 </tbody>
 </table>
 </li>
+<li>
+<p>ATMEGA328P-PU (Microchip 8-bit AVR Microcontroller)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="mcu_atmega328.png" data-desc-position="bottom"><img alt="" src="mcu_atmega328.png"></a></p>
+<ul>
+<li>$2.42 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-PU/1914589">DigiKey Product Page</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard 28-pin DIP package</td>
+<td>Lacks built-in hardware programmer</td>
+</tr>
+<tr>
+<td>Broad community software support</td>
+<td>Not permitted as primary MCU for EGR304 course rules</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>MSP430G2553IN20 (Texas Instruments 16-bit Ultra-Low-Power MCU)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="mcu_msp430.png" data-desc-position="bottom"><img alt="" src="mcu_msp430.png"></a></p>
+<ul>
+<li>$2.10 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/MSP430G2553IN20/2258489">DigiKey Product Page</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extremely low active and standby power consumption</td>
+<td>Different architecture/toolchain</td>
+</tr>
+<tr>
+<td>20-pin DIP package</td>
+<td>Not allowed under course requirements</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ol>
-<p><strong>Choice:</strong> Microchip PIC18F57Q43 Curiosity Nano Board</p>
+<p><strong>Choice:</strong> Option 1: Microchip PIC18F57Q43 Curiosity Nano Board</p>
 <p><strong>Rationale:</strong> Standardized required core processing board across all EGR304 team subsystems.</p>
 <hr>
 <h2 id="3-motion-pet-detection-sensor">3. Motion / Pet Detection Sensor</h2>
 <ol>
 <li>
-<p><strong>Kit Photoresistor / Light Dependent Resistor (LDR)</strong> <em>(Currently In-Stock)</em></p>
+<p>Kit Photoresistor / Light Dependent Resistor (LDR) <em>(Currently In-Stock)</em></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="sensor_ldr.png" data-desc-position="bottom"><img alt="" src="sensor_ldr.png"></a></p>
 <ul>
 <li>$0.00 (Included in provided kit, Item 18)</li>
 <li>Generic CdS Photoresistor</li>
@@ -1025,10 +1107,11 @@
 </table>
 </li>
 <li>
-<p><strong>EKMC1601111 (Panasonic PIR Motion Sensor IC)</strong></p>
+<p>EKMC1601111 (Panasonic PIR Motion Sensor IC)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="sensor_pir_panasonic.png" data-desc-position="bottom"><img alt="" src="sensor_pir_panasonic.png"></a></p>
 <ul>
-<li>$8.45 / each</li>
-<li><a href="https://www.digikey.com/en/products/detail/panasonic-electric-works/EKMC1601111/6232149">DigiKey Product Page</a></li>
+<li>$9.73 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/panasonic-industry/EKMC1601111/2601868">DigiKey Product Page</a></li>
 </ul>
 <table>
 <thead>
@@ -1049,6 +1132,32 @@
 </tbody>
 </table>
 </li>
+<li>
+<p>Senba Optical BS512 (Pyroelectric Infrared Radial Sensor)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="sensor_pir_senba.png" data-desc-position="bottom"><img alt="" src="sensor_pir_senba.png"></a></p>
+<ul>
+<li>$2.15 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/senba-sensing-technology-co-ltd/BS512/13682974">DigiKey Product Page</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inexpensive discrete PIR element</td>
+<td>Requires external multi-stage op-amp filtering and bias network</td>
+</tr>
+<tr>
+<td>Compact footprint</td>
+<td>Higher design complexity for PCB layout</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ol>
 <p><strong>Choice:</strong> Option 1: Kit Photoresistor (LDR)</p>
 <p><strong>Rationale:</strong> The kit photoresistor is readily available on hand. Configured in a voltage divider circuit into the LM324N non-inverting op-amp stage, it reliably registers pet proximity when the optical beam or overhead light path above the bowl is obstructed.</p>
@@ -1056,7 +1165,8 @@
 <h2 id="4-signal-conditioning-op-amp">4. Signal Conditioning (Op-Amp)</h2>
 <ol>
 <li>
-<p><strong>LM324N Quad General Purpose Operational Amplifier</strong> <em>(Currently In-Stock)</em></p>
+<p>LM324N Quad General Purpose Operational Amplifier <em>(Currently In-Stock)</em></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="opamp_lm324n.png" data-desc-position="bottom"><img alt="" src="opamp_lm324n.png"></a></p>
 <ul>
 <li>$0.82 / each</li>
 <li><a href="https://www.ti.com/lit/ds/symlink/lm224.pdf">TI LM324N Datasheet</a></li>
@@ -1086,7 +1196,8 @@
 </table>
 </li>
 <li>
-<p><strong>TLV2374IN (Texas Instruments Rail-to-Rail Quad Op-Amp)</strong></p>
+<p>TLV2374IN (Texas Instruments Rail-to-Rail Quad Op-Amp)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="opamp_tlv2374.png" data-desc-position="bottom"><img alt="" src="opamp_tlv2374.png"></a></p>
 <ul>
 <li>$2.15 / each</li>
 <li><a href="https://www.digikey.com/en/products/detail/texas-instruments/TLV2374IN/379261">DigiKey Product Page</a></li>
@@ -1110,6 +1221,32 @@
 </tbody>
 </table>
 </li>
+<li>
+<p>MCP6004-E/P (Microchip Low-Power Quad Op-Amp)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="opamp_mcp6004.png" data-desc-position="bottom"><img alt="" src="opamp_mcp6004.png"></a></p>
+<ul>
+<li>$0.98 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-E-P/522336">DigiKey Product Page</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rail-to-rail I/O optimized for <span class="arithmatex">\(1.8\text{V}\text{--}5.5\text{V}\)</span> single-supply circuits</td>
+<td>Lower gain-bandwidth product (<span class="arithmatex">\(1\text{MHz}\)</span>)</td>
+</tr>
+<tr>
+<td>Standard 14-pin DIP through-hole package</td>
+<td>Requires additional order</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ol>
 <p><strong>Choice:</strong> Option 1: Texas Instruments LM324N</p>
 <p><strong>Rationale:</strong> The LM324N is currently on hand in a DIP-14 package. Configured as a non-inverting amplifier, it buffers and scales the photoresistor voltage divider signal into the PIC18F57Q43 <code>RA0</code> (<code>ADC1</code>) input within the <span class="arithmatex">\(0\text{--}3.5\text{V}\)</span> dynamic range without requiring external purchases.</p>
@@ -1117,9 +1254,10 @@
 <h2 id="5-audio-alert-output">5. Audio Alert Output</h2>
 <ol>
 <li>
-<p><strong>8-Ohm Dynamic Speaker</strong> <em>(Currently In-Stock)</em></p>
+<p>8-Ohm Dynamic Speaker + PN2222A NPN Driver Stage <em>(Currently In-Stock)</em></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="speaker_8ohm.png" data-desc-position="bottom"><img alt="" src="speaker_8ohm.png"></a></p>
 <ul>
-<li>$0.00 (On hand component)</li>
+<li>$0.00 (On hand component &amp; Kit NPN Transistor, Item 10)</li>
 <li>Standard 8-Ohm, 0.25W Mylar/Paper Cone Speaker</li>
 </ul>
 <table>
@@ -1132,7 +1270,7 @@
 <tbody>
 <tr>
 <td>On hand; capable of playing complex multi-tone audio meal chimes via PWM</td>
-<td>Requires a transistor (PN2222A) driver stage due to low impedance (<span class="arithmatex">\(8\Omega\)</span>)</td>
+<td>Requires transistor driver stage (PN2222A) due to low coil impedance (<span class="arithmatex">\(8\Omega\)</span>)</td>
 </tr>
 <tr>
 <td>Richer tone and higher acoustic output than a piezo buzzer</td>
@@ -1142,10 +1280,11 @@
 </table>
 </li>
 <li>
-<p><strong>PS1240P02BT (TDK Piezoelectric Buzzer)</strong></p>
+<p>TDK PS1240P02BT (Piezoelectric Audio Indicator)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="buzzer_ps1240.png" data-desc-position="bottom"><img alt="" src="buzzer_ps1240.png"></a></p>
 <ul>
-<li>$0.95 / each</li>
-<li><a href="https://www.digikey.com/en/products/detail/tdk-corporation/PS1240P02BT/935922">DigiKey Product Page</a></li>
+<li>$0.73 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/tdk/PS1240P02BT/935924">DigiKey Product Page</a></li>
 </ul>
 <table>
 <thead>
@@ -1156,19 +1295,45 @@
 </thead>
 <tbody>
 <tr>
-<td>Very low power consumption (<span class="arithmatex">\(&lt;10\text{mA}\)</span>)</td>
-<td>Limited frequency response; plays only high-pitched single tones</td>
+<td>Compact 12.2mm through-hole footprint</td>
+<td>Plays single-frequency high-pitched tones only</td>
 </tr>
 <tr>
-<td>Drives directly from GPIO</td>
-<td>Requires separate purchase and shipping</td>
+<td>Low operating current draw (<span class="arithmatex">\(&lt;5\text{mA}\)</span>)</td>
+<td>Requires separate order and shipping time</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Same Sky CPT-1255C-090 (Piezo Transducer)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="buzzer_cpt1255.png" data-desc-position="bottom"><img alt="" src="buzzer_cpt1255.png"></a></p>
+<ul>
+<li>$1.50 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/same-sky/CPT-1255C-090/935924">DigiKey Product Page</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High sound pressure output (<span class="arithmatex">\(85\text{dB}\)</span> at <span class="arithmatex">\(10\text{cm}\)</span>)</td>
+<td>Higher unit cost</td>
+</tr>
+<tr>
+<td>Standard through-hole pin mounting</td>
+<td>Narrow acoustic bandwidth</td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
 <p><strong>Choice:</strong> Option 1: 8-Ohm Dynamic Speaker (Driven by Kit PN2222A NPN Transistor)</p>
-<p><strong>Rationale:</strong> The 8-Ohm speaker is already on hand. Interfaced to pin <code>RA1</code> via a PN2222A NPN transistor (from the provided kit, Item 10)[cite: 4] with a current-limiting base resistor and flyback diode, it produces audible feeding alerts directly controlled by the PIC's PWM module.</p>
+<p><strong>Rationale:</strong> The 8-Ohm speaker and PN2222A NPN transistor are already on hand in the provided kit. Interfaced to pin <code>RA1</code> via the PN2222A with a current-limiting base resistor and flyback protection diode, it produces audible feeding alerts directly driven by the PIC microcontroller's PWM module.</p>
 
 
 
