@@ -179,12 +179,12 @@ title: Component Selection
     | High acoustic intensity output ($80\text{dB}$ at $10\text{cm}$) | Requires PWM square wave driving signal from MCU |
     | Compact 13.8mm through-hole PC pin footprint | |
 
-2. 8-Ohm Dynamic Speaker + PN2222A NPN Driver Stage *(Currently In-Stock)*
+2. 8-Ohm Dynamic Speaker + PN2222A NPN Driver Stage 
 
     ![](image_2026-10-16_155500440.png)
 
     * $0.00 (On hand component & Kit NPN Transistor, Item 10)
-    * [DigiKey Product Page]([https://www.digikey.com/en/products/detail/tdk/PS1240P02BT/935924](https://www.digikey.com/en/products/detail/soberton-inc/SP-2306-1/9924408?gclsrc=aw.ds&gad_source=1&gad_campaignid=20243136172&gclid=Cj0KCQjwlsfWBhD4ARIsACL7p1ENwKsd_tyDLq9xjOjxE6ERBCEwBc_mazVRd1xyyfeqkCz6S3x8tx4aAgGCEALw_wcB))
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/soberton-inc/SP-2306-1/9924408?gclsrc=aw.ds&gad_source=1&gad_campaignid=20243136172&gclid=Cj0KCQjwlsfWBhD4ARIsACL7p1ENwKsd_tyDLq9xjOjxE6ERBCEwBc_mazVRd1xyyfeqkCz6S3x8tx4aAgGCEALw_wcB)
 
     | Pros | Cons |
     | --- | --- |
