@@ -101,7 +101,7 @@ title: Component Selection
 
 3. Adafruit 4666 Mini Basic PIR Sensor (BS412 Element)
 
-    ![](images/pir_adafruit_mini.png)
+    ![](image_2026-10-16_161518450.png)
 
     * $1.95 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4666/13175534)
