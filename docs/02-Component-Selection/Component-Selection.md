@@ -8,7 +8,7 @@ title: Component Selection
 
 1. L7805ABV-DG (STMicroelectronics 5V 1.5A Linear Regulator)
    
-    ![](images/l7805.png)
+    ![](image_2026-10-16_154301256.png)
 
     * $0.88 / each
     * [STMicroelectronics L7805ABV-DG Datasheet](https://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf)
@@ -22,7 +22,7 @@ title: Component Selection
 
 2. LM2596S-5.0 (Texas Instruments Buck Switching Regulator)
 
-    ![](images/lm2596.png)
+    ![](image_2026-10-16_154403980.png)
 
     * $2.50 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-5-0-NOPB/363497)
@@ -34,7 +34,7 @@ title: Component Selection
 
 3. UA78M05CKCS (Texas Instruments 5V 500mA Linear Regulator)
 
-    ![](images/ua78m05.png)
+    ![](image_2026-10-16_154443095.png)
 
     * $0.72 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/UA78M05CKCS/380721)
@@ -54,7 +54,7 @@ title: Component Selection
 
 1. PIC18F57Q43 Curiosity Nano Board 
 
-    ![](images/pic18.png)
+    ![](image_2026-10-16_154526549.png)
 
     * Pre-selected Course Requirement
     * [PIC18F57Q43 Hardware User Guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf)
@@ -76,7 +76,7 @@ title: Component Selection
 
 1. Adafruit 189 PIR Motion Sensor Module
 
-    ![](images/pir_adafruit.png)
+    ![](image_2026-10-16_154559221.png)
 
     * $9.95 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/adafruit-industries-llc/189/6827035)
@@ -89,7 +89,7 @@ title: Component Selection
 
 2. Photoresistor / Light Dependent Resistor (LDR) 
 
-    ![](images/ldr.png)
+    ![](image_2026-10-16_154652660.png)
 
     * $0.00 (Included in provided electronics kit, Item 18)
     * Generic CdS Photoresistor
@@ -99,18 +99,18 @@ title: Component Selection
     | On hand; simple voltage divider interface with a $10\text{k}\Omega$ resistor | Sensitive to ambient room lighting variations; requires calibration |
     | Detects light blockage when a pet approaches the feeding dish | Slower optical response time ($20\text{--}30\text{ms}$) |
 
-3. Senba Optical BS512 (Pyroelectric Infrared Radial Sensor)
+3. Adafruit 4666 Mini Basic PIR Sensor (BS412 Element)
 
-    ![](images/pir_senba.png)
+    ![](images/pir_adafruit_mini.png)
 
-    * $2.15 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/senba-sensing-technology-co-ltd/BS512/13682974)
+    * $1.95 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4666/13175534)
 
     | Pros | Cons |
     | --- | --- |
-    | Inexpensive discrete PIR element | Requires external multi-stage op-amp filtering and bias network |
-    | Compact footprint | Higher design complexity for PCB layout |
-
+    | Inexpensive miniature PIR element | Requires external bias resistors and driver circuitry |
+    | Ultra-compact metal CAN TO-5 package footprint | Shorter detection range ($3\text{m}$) compared to full modules |
+   
 **Choice:** Option 1: Adafruit 189 PIR Motion Sensor Module
 
 **Rationale:** The Adafruit 189 PIR Motion Sensor Module provides true infrared thermal detection specifically calibrated for moving bodies, such as owner hand movement or pets approaching the bowl. Because it features built-in signal conditioning and adjustable sensitivity potentiometers, it outputs a clean, chatter-free digital high signal directly to the microcontroller without requiring complex software filtering or sensitivity to ambient room light changes.
@@ -121,7 +121,7 @@ title: Component Selection
 
 1. LM324N Quad General Purpose Operational Amplifier 
 
-    ![](images/lm324n.png)
+    ![](image_2026-10-16_155206658.png)
 
     * $0.82 / each
     * [TI LM324N Datasheet](https://www.ti.com/lit/ds/symlink/lm224.pdf)
@@ -135,7 +135,7 @@ title: Component Selection
 
 2. LMC6484IN/NOPB (Texas Instruments CMOS Quad Rail-to-Rail Op-Amp)
 
-    ![](images/lmc6484.png)
+    ![](image_2026-10-16_155250124.png)
 
     * $2.35 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/LMC6484IN-NOPB/164521)
@@ -148,10 +148,10 @@ title: Component Selection
 
 3. MCP6004-E/P (Microchip Low-Power Quad Op-Amp)
 
-    ![](images/mcp6004.png)
+    ![](image_2026-10-16_155332451.png)
 
     * $0.98 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-E-P/522336)
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-E-P/683200?s=N4IgTCBcDaILIGEAKA2ADGgLAWgKIHokQBdAXyA)
 
     | Pros | Cons |
     | --- | --- |
@@ -168,7 +168,7 @@ title: Component Selection
 
 1. Soberton Inc. PT-1407 Piezoelectric Transducer
 
-    ![](images/pt1407.png)
+    ![](image_2026-10-16_155422374.png)
 
     * $1.18 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/soberton-inc/PT-1407/1245311)
@@ -181,10 +181,10 @@ title: Component Selection
 
 2. 8-Ohm Dynamic Speaker + PN2222A NPN Driver Stage *(Currently In-Stock)*
 
-    ![](images/speaker8ohm.png)
+    ![](image_2026-10-16_155500440.png)
 
     * $0.00 (On hand component & Kit NPN Transistor, Item 10)
-    * Standard 8-Ohm, 0.25W Mylar/Paper Cone Speaker
+    * [DigiKey Product Page]([https://www.digikey.com/en/products/detail/tdk/PS1240P02BT/935924](https://www.digikey.com/en/products/detail/soberton-inc/SP-2306-1/9924408?gclsrc=aw.ds&gad_source=1&gad_campaignid=20243136172&gclid=Cj0KCQjwlsfWBhD4ARIsACL7p1ENwKsd_tyDLq9xjOjxE6ERBCEwBc_mazVRd1xyyfeqkCz6S3x8tx4aAgGCEALw_wcB))
 
     | Pros | Cons |
     | --- | --- |
@@ -193,7 +193,7 @@ title: Component Selection
 
 3. TDK PS1240P02BT (Piezoelectric Audio Indicator)
 
-    ![](images/ps1240.png)
+    ![](image_2026-10-16_155543352.png)
 
     * $0.73 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/tdk/PS1240P02BT/935924)
