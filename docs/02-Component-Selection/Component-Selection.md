@@ -6,8 +6,8 @@ title: Component Selection
 
 ## 1. 5V Voltage Regulator Module
 
-1. L7805ABV-DG (STMicroelectronics 5V 1.5A Linear Regulator) *(Currently In-Stock)*
-
+1. L7805ABV-DG (STMicroelectronics 5V 1.5A Linear Regulator)
+   
     ![](images/l7805.png)
 
     * $0.88 / each
@@ -52,7 +52,7 @@ title: Component Selection
 
 ## 2. Microcontroller Platform
 
-1. PIC18F57Q43 Curiosity Nano Development Board *(Currently In-Stock)*
+1. PIC18F57Q43 Curiosity Nano Board 
 
     ![](images/pic18.png)
 
@@ -65,33 +65,10 @@ title: Component Selection
     | On-board PKOB4 programmer/debugger over USB | |
     | Integrated $12\text{-bit}$ ADC (`ADC1`), $8\text{-bit}$ DAC, Configurable Logic Cells (CLC), and PWM peripherals | |
 
-2. ATMEGA328P-PU (Microchip 8-bit AVR Microcontroller)
-
-    ![](images/atmega328.png)
-
-    * $2.42 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-PU/1914589)
-
-    | Pros | Cons |
-    | --- | --- |
-    | Standard 28-pin DIP package | Lacks built-in hardware programmer |
-    | Broad community software support | Not permitted as primary MCU for EGR304 course rules |
-
-3. MSP430G2553IN20 (Texas Instruments 16-bit Ultra-Low-Power MCU)
-
-    ![](images/msp430.png)
-
-    * $2.10 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/MSP430G2553IN20/2258489)
-
-    | Pros | Cons |
-    | --- | --- |
-    | Extremely low active and standby power consumption | Different architecture/toolchain |
-    | 20-pin DIP package | Not allowed under course requirements |
 
 **Choice:** Option 1: Microchip PIC18F57Q43 Curiosity Nano Board
 
-**Rationale:** Standardized required core processing board across all EGR304 team subsystems.
+**Rationale:** Core processing board for all team subsystems.
 
 ---
 
@@ -110,11 +87,11 @@ title: Component Selection
     | Provides direct $3.3\text{V/5V}$ digital high output upon motion detection | Larger physical module footprint |
     | On-board sensitivity and delay time adjustment potentiometers | |
 
-2. Kit Photoresistor / Light Dependent Resistor (LDR) *(Currently In-Stock)*
+2. Photoresistor / Light Dependent Resistor (LDR) 
 
     ![](images/ldr.png)
 
-    * $0.00 (Included in provided kit, Item 18)
+    * $0.00 (Included in provided electronics kit, Item 18)
     * Generic CdS Photoresistor
 
     | Pros | Cons |
@@ -136,13 +113,13 @@ title: Component Selection
 
 **Choice:** Option 1: Adafruit 189 PIR Motion Sensor Module
 
-**Rationale:** The Adafruit 189 PIR Motion Sensor Module provides true infrared thermal detection specifically calibrated for moving bodies (such as pets approaching the bowl). Because it features built-in signal conditioning and adjustable sensitivity potentiometers, it outputs a clean, chatter-free digital high signal directly to the microcontroller without requiring complex software filtering or sensitivity to ambient room light changes.
+**Rationale:** The Adafruit 189 PIR Motion Sensor Module provides true infrared thermal detection specifically calibrated for moving bodies, such as owner hand movement or pets approaching the bowl. Because it features built-in signal conditioning and adjustable sensitivity potentiometers, it outputs a clean, chatter-free digital high signal directly to the microcontroller without requiring complex software filtering or sensitivity to ambient room light changes.
 
 ---
 
 ## 4. Signal Conditioning (Op-Amp)
 
-1. LM324N Quad General Purpose Operational Amplifier *(Currently In-Stock)*
+1. LM324N Quad General Purpose Operational Amplifier 
 
     ![](images/lm324n.png)
 
