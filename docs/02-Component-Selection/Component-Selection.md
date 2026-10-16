@@ -2,7 +2,7 @@
 title: Component Selection
 ---
 
-# Component Selection Interaction & Audio Alert
+# Component Selection - Interaction & Audio Alert
 
 ## 1. 5V Voltage Regulator Module
 
@@ -97,7 +97,20 @@ title: Component Selection
 
 ## 3. Motion / Pet Detection Sensor
 
-1. Kit Photoresistor / Light Dependent Resistor (LDR) *(Currently In-Stock)*
+1. Adafruit 189 PIR Motion Sensor Module
+
+    ![](images/pir_adafruit.png)
+
+    * $9.95 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/adafruit-industries-llc/189/5353612)
+
+    | Pros | Cons |
+    | --- | --- |
+    | Integrated Fresnel lens and signal conditioning circuitry | Higher cost per unit |
+    | Provides direct $3.3\text{V/5V}$ digital high output upon motion detection | Larger physical module footprint |
+    | On-board sensitivity and delay time adjustment potentiometers | |
+
+2. Kit Photoresistor / Light Dependent Resistor (LDR) *(Currently In-Stock)*
 
     ![](images/ldr.png)
 
@@ -106,20 +119,8 @@ title: Component Selection
 
     | Pros | Cons |
     | --- | --- |
-    | On hand; simple voltage divider interface with a $10\text{k}\Omega$ resistor | Sensitive to ambient light variations; requires calibration |
+    | On hand; simple voltage divider interface with a $10\text{k}\Omega$ resistor | Sensitive to ambient room lighting variations; requires calibration |
     | Detects light blockage when a pet approaches the feeding dish | Slower optical response time ($20\text{--}30\text{ms}$) |
-
-2. EKMC1601111 (Panasonic PIR Motion Sensor IC)
-
-    ![](images/pir_panasonic.png)
-
-    * $9.73 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/panasonic-industry/EKMC1601111/2601868)
-
-    | Pros | Cons |
-    | --- | --- |
-    | True passive infrared thermal motion detection | High cost per unit |
-    | Integrated lens and digital output conditioning | Requires purchasing new parts and waiting for shipping |
 
 3. Senba Optical BS512 (Pyroelectric Infrared Radial Sensor)
 
@@ -133,9 +134,9 @@ title: Component Selection
     | Inexpensive discrete PIR element | Requires external multi-stage op-amp filtering and bias network |
     | Compact footprint | Higher design complexity for PCB layout |
 
-**Choice:** Option 1: Kit Photoresistor (LDR)
+**Choice:** Option 1: Adafruit 189 PIR Motion Sensor Module
 
-**Rationale:** The kit photoresistor is readily available on hand. Configured in a voltage divider circuit into the LM324N non-inverting op-amp stage, it reliably registers pet proximity when the optical beam or overhead light path above the bowl is obstructed.
+**Rationale:** The Adafruit 189 PIR Motion Sensor Module provides true infrared thermal detection specifically calibrated for moving bodies (such as pets approaching the bowl). Because it features built-in signal conditioning and adjustable sensitivity potentiometers, it outputs a clean, chatter-free digital high signal directly to the microcontroller without requiring complex software filtering or sensitivity to ambient room light changes.
 
 ---
 
@@ -182,13 +183,26 @@ title: Component Selection
 
 **Choice:** Option 1: Texas Instruments LM324N
 
-**Rationale:** The LM324N is currently on hand in a DIP-14 package. Configured as a non-inverting amplifier, it buffers and scales the photoresistor voltage divider signal into the PIC18F57Q43 `RA0` (`ADC1`) input within the $0\text{--}3.5\text{V}$ dynamic range without requiring external purchases.
+**Rationale:** The LM324N is currently on hand in a DIP-14 package. Configured as a non-inverting buffer/comparator, it conditions auxiliary analog sensor signals into the PIC18F57Q43 `RA0` (`ADC1`) input within the $0\text{--}3.5\text{V}$ dynamic range without requiring external purchases.
 
 ---
 
 ## 5. Audio Alert Output
 
-1. 8-Ohm Dynamic Speaker + PN2222A NPN Driver Stage *(Currently In-Stock)*
+1. Mallory Sonalert AST0827MW-03Q Piezoelectric Transducer
+
+    ![](images/ast0827.png)
+
+    * $1.25 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/mallory-sonalert-products-inc/AST0827MW-03Q/1802388)
+
+    | Pros | Cons |
+    | --- | --- |
+    | Very low operating current draw ($<10\text{mA}$) | Plays narrower acoustic frequency bands compared to dynamic speakers |
+    | Ultra-compact through-hole PCB surface mount footprint | Requires square wave PWM driving signal from MCU |
+    | High sound pressure level ($85\text{dB}$ at $10\text{cm}$) | |
+
+2. 8-Ohm Dynamic Speaker + PN2222A NPN Driver Stage *(Currently In-Stock)*
 
     ![](images/speaker8ohm.png)
 
@@ -200,7 +214,7 @@ title: Component Selection
     | On hand; capable of playing complex multi-tone audio meal chimes via PWM | Requires transistor driver stage (PN2222A) due to low coil impedance ($8\Omega$) |
     | Richer tone and higher acoustic output than a piezo buzzer | Draws higher peak current ($\approx 100\text{mA}$) during tone generation |
 
-2. TDK PS1240P02BT (Piezoelectric Audio Indicator)
+3. TDK PS1240P02BT (Piezoelectric Audio Indicator)
 
     ![](images/ps1240.png)
 
@@ -212,12 +226,9 @@ title: Component Selection
     | Compact 12.2mm through-hole footprint | Plays single-frequency high-pitched tones only |
     | Low operating current draw ($<5\text{mA}$) | Requires separate order and shipping time |
 
-3. Same Sky CPT-1255C-090 (Piezo Transducer)
+**Choice:** Option 1: Mallory Sonalert AST0827MW-03Q Piezoelectric Transducer
 
-    ![](images/cpt1255.png)
-
-    * $1.50 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/same-sky/CPT-1255C-090/1863261)
+**Rationale:** The Mallory Sonalert AST0827MW-03Q is chosen for its compact size, low power consumption ($<10\text{mA}$), and high acoustic output ($85\text{dB}$). Driven directly by a PIC18 PWM output pin (`RA1`) without requiring an external NPN transistor driver stage, it simplifies PCB layout while delivering a clear alert chime when feeding routines trigger.
 
     | Pros | Cons |
     | --- | --- |
