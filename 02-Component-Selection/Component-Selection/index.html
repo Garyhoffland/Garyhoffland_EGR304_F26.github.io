@@ -1085,7 +1085,7 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/pir_adafruit.png" data-desc-position="bottom"><img alt="" src="images/pir_adafruit.png"></a></p>
 <ul>
 <li>$9.95 / each</li>
-<li><a href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/189/5353612">DigiKey Product Page</a></li>
+<li><a href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/189/6827035">DigiKey Product Page</a></li>
 </ul>
 <table>
 <thead>
@@ -1262,11 +1262,11 @@
 <h2 id="5-audio-alert-output">5. Audio Alert Output</h2>
 <ol>
 <li>
-<p>Mallory Sonalert AST0827MW-03Q Piezoelectric Transducer</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/ast0827.png" data-desc-position="bottom"><img alt="" src="images/ast0827.png"></a></p>
+<p>Soberton Inc. PT-1407 Piezoelectric Transducer</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/pt1407.png" data-desc-position="bottom"><img alt="" src="images/pt1407.png"></a></p>
 <ul>
-<li>$1.25 / each</li>
-<li><a href="https://www.digikey.com/en/products/detail/mallory-sonalert-products-inc/AST0827MW-03Q/1802388">DigiKey Product Page</a></li>
+<li>$1.18 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/soberton-inc/PT-1407/1245311">DigiKey Product Page</a></li>
 </ul>
 <table>
 <thead>
@@ -1277,15 +1277,15 @@
 </thead>
 <tbody>
 <tr>
-<td>Very low operating current draw (<span class="arithmatex">\(&lt;10\text{mA}\)</span>)</td>
+<td>Standard <span class="arithmatex">\(5\text{V}\)</span> operating rating with minimal power consumption (<span class="arithmatex">\(1\text{mA}\)</span>)</td>
 <td>Plays narrower acoustic frequency bands compared to dynamic speakers</td>
 </tr>
 <tr>
-<td>Ultra-compact through-hole PCB surface mount footprint</td>
-<td>Requires square wave PWM driving signal from MCU</td>
+<td>High acoustic intensity output (<span class="arithmatex">\(80\text{dB}\)</span> at <span class="arithmatex">\(10\text{cm}\)</span>)</td>
+<td>Requires PWM square wave driving signal from MCU</td>
 </tr>
 <tr>
-<td>High sound pressure level (<span class="arithmatex">\(85\text{dB}\)</span> at <span class="arithmatex">\(10\text{cm}\)</span>)</td>
+<td>Compact 13.8mm through-hole PC pin footprint</td>
 <td></td>
 </tr>
 </tbody>
@@ -1344,15 +1344,8 @@
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 1: Mallory Sonalert AST0827MW-03Q Piezoelectric Transducer</p>
-<p><strong>Rationale:</strong> The Mallory Sonalert AST0827MW-03Q is chosen for its compact size, low power consumption (<span class="arithmatex">\(&lt;10\text{mA}\)</span>), and high acoustic output (<span class="arithmatex">\(85\text{dB}\)</span>). Driven directly by a PIC18 PWM output pin (<code>RA1</code>) without requiring an external NPN transistor driver stage, it simplifies PCB layout while delivering a clear alert chime when feeding routines trigger.</p>
-<pre><code>| Pros | Cons |
-| --- | --- |
-| High sound pressure output ($85\text{dB}$ at $10\text{cm}$) | Higher unit cost |
-| Standard through-hole pin mounting | Narrow acoustic bandwidth |
-</code></pre>
-<p><strong>Choice:</strong> Option 1: 8-Ohm Dynamic Speaker (Driven by Kit PN2222A NPN Transistor)</p>
-<p><strong>Rationale:</strong> The 8-Ohm speaker and PN2222A NPN transistor are already on hand in the provided kit. Interfaced to pin <code>RA1</code> via the PN2222A with a current-limiting base resistor and flyback protection diode, it produces audible feeding alerts directly driven by the PIC microcontroller's PWM module.</p>
+<p><strong>Choice:</strong> Option 1: Soberton Inc. PT-1407 Piezoelectric Transducer</p>
+<p><strong>Rationale:</strong> The Soberton Inc. PT-1407 is selected for its compact 13.8mm through-hole footprint, low <span class="arithmatex">\(1\text{mA}\)</span> operating current draw at <span class="arithmatex">\(5\text{V}\)</span>, and <span class="arithmatex">\(80\text{dB}\)</span> sound output. Driven directly by the PIC18 microcontroller PWM pin (<code>RA1</code>), it eliminates the need for a transistor driver stage while providing an audible alert chime when feeding routines are triggered.</p>
 
 
 
