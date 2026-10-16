@@ -2,11 +2,13 @@
 title: Component Selection
 ---
 
-# Component Selection - Pet Interaction & Audio Alert
+# Component Selection Pet Interaction & Audio Alert
 
-## 1. Voltage Regulator Module
+## 1. 5V Voltage Regulator Module
 
-1. **L7805ABV-DG (5V 1.5A Linear Regulator)** *(Currently In-Stock)*
+1. L7805ABV-DG (STMicroelectronics 5V 1.5A Linear Regulator) *(Currently In-Stock)*
+
+    ![](regulator_l7805.png)
 
     * $0.88 / each
     * [STMicroelectronics L7805ABV-DG Datasheet](https://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf)
@@ -18,7 +20,9 @@ title: Component Selection
     | TO-220 package allows easy breadboard and through-hole PCB assembly | Linear topology dissipates excess voltage ($9\text{V} \rightarrow 5\text{V}$) as heat |
     | Provides stable $5\text{V DC}$ output up to $1.5\text{A}$, fully powering the PIC18, LM324, and speaker driver | |
 
-2. **LM2596S-5.0 (Buck Switching Regulator)**
+2. LM2596S-5.0 (Texas Instruments Buck Switching Regulator)
+
+    ![](regulator_lm2596.png)
 
     * $2.50 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-5-0-NOPB/363497)
@@ -26,7 +30,19 @@ title: Component Selection
     | Pros | Cons |
     | --- | --- |
     | Highly efficient ($>80\%$) switching conversion | Requires external power inductor, catch diode, and filter capacitors |
-    | Low heat generation | Higher component count and complex PCB layout footprint |
+    | Low heat generation under heavy load | Higher component count and complex PCB layout footprint |
+
+3. UA78M05CKCS (Texas Instruments 5V 500mA Linear Regulator)
+
+    ![](regulator_ua78m05.png)
+
+    * $0.72 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/UA78M05CKCS/380721)
+
+    | Pros | Cons |
+    | --- | --- |
+    | Standard TO-220 through-hole footprint | Lower current capacity ($500\text{mA}$) compared to L7805 |
+    | Inexpensive and reliable | Marginally lower thermal overhead |
 
 **Choice:** Option 1: STMicroelectronics L7805ABV-DG
 
@@ -34,9 +50,11 @@ title: Component Selection
 
 ---
 
-## 2. Microcontroller
+## 2. Microcontroller Platform
 
-1. **PIC18F57Q43 Curiosity Nano Development Board** *(Currently In-Stock)*
+1. PIC18F57Q43 Curiosity Nano Development Board *(Currently In-Stock)*
+
+    ![](mcu_pic18.png)
 
     * Pre-selected Course Requirement
     * [PIC18F57Q43 Hardware User Guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf)
@@ -47,7 +65,31 @@ title: Component Selection
     | On-board PKOB4 programmer/debugger over USB | |
     | Integrated $12\text{-bit}$ ADC (`ADC1`), $8\text{-bit}$ DAC, Configurable Logic Cells (CLC), and PWM peripherals | |
 
-**Choice:** Microchip PIC18F57Q43 Curiosity Nano Board
+2. ATMEGA328P-PU (Microchip 8-bit AVR Microcontroller)
+
+    ![](mcu_atmega328.png)
+
+    * $2.42 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-PU/1914589)
+
+    | Pros | Cons |
+    | --- | --- |
+    | Standard 28-pin DIP package | Lacks built-in hardware programmer |
+    | Broad community software support | Not permitted as primary MCU for EGR304 course rules |
+
+3. MSP430G2553IN20 (Texas Instruments 16-bit Ultra-Low-Power MCU)
+
+    ![](mcu_msp430.png)
+
+    * $2.10 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/MSP430G2553IN20/2258489)
+
+    | Pros | Cons |
+    | --- | --- |
+    | Extremely low active and standby power consumption | Different architecture/toolchain |
+    | 20-pin DIP package | Not allowed under course requirements |
+
+**Choice:** Option 1: Microchip PIC18F57Q43 Curiosity Nano Board
 
 **Rationale:** Standardized required core processing board across all EGR304 team subsystems.
 
@@ -55,7 +97,9 @@ title: Component Selection
 
 ## 3. Motion / Pet Detection Sensor
 
-1. **Kit Photoresistor / Light Dependent Resistor (LDR)** *(Currently In-Stock)*
+1. Kit Photoresistor / Light Dependent Resistor (LDR) *(Currently In-Stock)*
+
+    ![](sensor_ldr.png)
 
     * $0.00 (Included in provided kit, Item 18)
     * Generic CdS Photoresistor
@@ -65,15 +109,29 @@ title: Component Selection
     | On hand; simple voltage divider interface with a $10\text{k}\Omega$ resistor | Sensitive to ambient light variations; requires calibration |
     | Detects light blockage when a pet approaches the feeding dish | Slower optical response time ($20\text{--}30\text{ms}$) |
 
-2. **EKMC1601111 (Panasonic PIR Motion Sensor IC)**
+2. EKMC1601111 (Panasonic PIR Motion Sensor IC)
 
-    * $8.45 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/panasonic-electric-works/EKMC1601111/6232149)
+    ![](sensor_pir_panasonic.png)
+
+    * $9.73 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/panasonic-industry/EKMC1601111/2601868)
 
     | Pros | Cons |
     | --- | --- |
     | True passive infrared thermal motion detection | High cost per unit |
     | Integrated lens and digital output conditioning | Requires purchasing new parts and waiting for shipping |
+
+3. Senba Optical BS512 (Pyroelectric Infrared Radial Sensor)
+
+    ![](sensor_pir_senba.png)
+
+    * $2.15 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/senba-sensing-technology-co-ltd/BS512/13682974)
+
+    | Pros | Cons |
+    | --- | --- |
+    | Inexpensive discrete PIR element | Requires external multi-stage op-amp filtering and bias network |
+    | Compact footprint | Higher design complexity for PCB layout |
 
 **Choice:** Option 1: Kit Photoresistor (LDR)
 
@@ -83,7 +141,9 @@ title: Component Selection
 
 ## 4. Signal Conditioning (Op-Amp)
 
-1. **LM324N Quad General Purpose Operational Amplifier** *(Currently In-Stock)*
+1. LM324N Quad General Purpose Operational Amplifier *(Currently In-Stock)*
+
+    ![](opamp_lm324n.png)
 
     * $0.82 / each
     * [TI LM324N Datasheet](https://www.ti.com/lit/ds/symlink/lm224.pdf)
@@ -95,7 +155,9 @@ title: Component Selection
     | Four independent channels allow scaling multiple sensor inputs | Higher offset voltage compared to modern precision op-amps |
     | Operates directly from a single $+5\text{V}$ supply rail | |
 
-2. **TLV2374IN (Texas Instruments Rail-to-Rail Quad Op-Amp)**
+2. TLV2374IN (Texas Instruments Rail-to-Rail Quad Op-Amp)
+
+    ![](opamp_tlv2374.png)
 
     * $2.15 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/texas-instruments/TLV2374IN/379261)
@@ -105,6 +167,18 @@ title: Component Selection
     | True rail-to-rail input and output capability | Requires purchasing new component |
     | Low supply current ($560\mu\text{A/ch}$) | Higher unit price |
 
+3. MCP6004-E/P (Microchip Low-Power Quad Op-Amp)
+
+    ![](opamp_mcp6004.png)
+
+    * $0.98 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-E-P/522336)
+
+    | Pros | Cons |
+    | --- | --- |
+    | Rail-to-rail I/O optimized for $1.8\text{V}\text{--}5.5\text{V}$ single-supply circuits | Lower gain-bandwidth product ($1\text{MHz}$) |
+    | Standard 14-pin DIP through-hole package | Requires additional order |
+
 **Choice:** Option 1: Texas Instruments LM324N
 
 **Rationale:** The LM324N is currently on hand in a DIP-14 package. Configured as a non-inverting amplifier, it buffers and scales the photoresistor voltage divider signal into the PIC18F57Q43 `RA0` (`ADC1`) input within the $0\text{--}3.5\text{V}$ dynamic range without requiring external purchases.
@@ -113,26 +187,42 @@ title: Component Selection
 
 ## 5. Audio Alert Output
 
-1. **8-Ohm Dynamic Speaker** *(Currently In-Stock)*
+1. 8-Ohm Dynamic Speaker + PN2222A NPN Driver Stage *(Currently In-Stock)*
 
-    * $0.00 (On hand component)
+    ![](speaker_8ohm.png)
+
+    * $0.00 (On hand component & Kit NPN Transistor, Item 10)
     * Standard 8-Ohm, 0.25W Mylar/Paper Cone Speaker
 
     | Pros | Cons |
     | --- | --- |
-    | On hand; capable of playing complex multi-tone audio meal chimes via PWM | Requires a transistor (PN2222A) driver stage due to low impedance ($8\Omega$) |
+    | On hand; capable of playing complex multi-tone audio meal chimes via PWM | Requires transistor driver stage (PN2222A) due to low coil impedance ($8\Omega$) |
     | Richer tone and higher acoustic output than a piezo buzzer | Draws higher peak current ($\approx 100\text{mA}$) during tone generation |
 
-2. **PS1240P02BT (TDK Piezoelectric Buzzer)**
+2. TDK PS1240P02BT (Piezoelectric Audio Indicator)
 
-    * $0.95 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/tdk-corporation/PS1240P02BT/935922)
+    ![](buzzer_ps1240.png)
+
+    * $0.73 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/tdk/PS1240P02BT/935924)
 
     | Pros | Cons |
     | --- | --- |
-    | Very low power consumption ($<10\text{mA}$) | Limited frequency response; plays only high-pitched single tones |
-    | Drives directly from GPIO | Requires separate purchase and shipping |
+    | Compact 12.2mm through-hole footprint | Plays single-frequency high-pitched tones only |
+    | Low operating current draw ($<5\text{mA}$) | Requires separate order and shipping time |
+
+3. Same Sky CPT-1255C-090 (Piezo Transducer)
+
+    ![](buzzer_cpt1255.png)
+
+    * $1.50 / each
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/same-sky/CPT-1255C-090/935924)
+
+    | Pros | Cons |
+    | --- | --- |
+    | High sound pressure output ($85\text{dB}$ at $10\text{cm}$) | Higher unit cost |
+    | Standard through-hole pin mounting | Narrow acoustic bandwidth |
 
 **Choice:** Option 1: 8-Ohm Dynamic Speaker (Driven by Kit PN2222A NPN Transistor)
 
-**Rationale:** The 8-Ohm speaker is already on hand. Interfaced to pin `RA1` via a PN2222A NPN transistor (from the provided kit, Item 10)[cite: 4] with a current-limiting base resistor and flyback diode, it produces audible feeding alerts directly controlled by the PIC's PWM module.
+**Rationale:** The 8-Ohm speaker and PN2222A NPN transistor are already on hand in the provided kit. Interfaced to pin `RA1` via the PN2222A with a current-limiting base resistor and flyback protection diode, it produces audible feeding alerts directly driven by the PIC microcontroller's PWM module.
