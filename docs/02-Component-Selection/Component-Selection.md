@@ -74,18 +74,21 @@ title: Component Selection
 
 ## 3. Motion / Pet Detection Sensor
 
-1. Adafruit 189 PIR Motion Sensor Module
+1. OPB732 Reflective Optical Sensor
 
-    ![](image_2026-10-16_154559221.png)
+    ![](<img width="795" height="558" alt="image" src="https://github.com/user-attachments/assets/fa38463e-a71f-4ef3-bd6a-005e95190aeb" />
+)
 
-    * $9.95 / each
-    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/adafruit-industries-llc/189/6827035)
+    * $4.61 / each
+    * [Datasheet](https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Datasheet/OPB732.pdf)
+    * [DigiKey Product Page](https://www.digikey.com/en/products/detail/tt-electronics-optek-technology/OPB732/1637069)
 
-    | Pros | Cons |
-    | --- | --- |
-    | Integrated Fresnel lens and signal conditioning circuitry | Higher cost per unit |
-    | Provides direct $3.3\text{V/5V}$ digital high output upon motion detection | Larger physical module footprint |
-    | On-board sensitivity and delay time adjustment potentiometers | |
+| Pros | Cons |
+| --- | --- |
+| Integrated IR LED and phototransistor in a single enclosed housing prevent ambient light false triggers | Higher per-unit cost than bare IR emitters/receivers |
+| Direct $5\text{V}$ rail compatibility allows simple $17.3\text{mA}$ drive via a standard $220\Omega$ resistor ($R2$) | Requires discrete external load/pull-down resistors for signal conditioning |
+| Wide output voltage swing ($0\text{V}\rightarrow 5\text{V}$) provides excellent noise immunity for op-amp filtering | Fixed optimum sensing range ($0.10^{\prime\prime}\text{--}0.50^{\prime\prime}$) requires precise physical mounting |
+| 24-inch 26 AWG wire leads and snap-in panel housing simplify chassis mounting | |
 
 2. Photoresistor / Light Dependent Resistor (LDR) 
 
@@ -111,9 +114,9 @@ title: Component Selection
     | Inexpensive miniature PIR element | Requires external bias resistors and driver circuitry |
     | Ultra-compact metal CAN TO-5 package footprint | Shorter detection range ($3\text{m}$) compared to full modules |
    
-**Choice:** Option 1: Adafruit 189 PIR Motion Sensor Module
+**Choice:** OPB732 Reflective Optical Sensor
 
-**Rationale:** The Adafruit 189 PIR Motion Sensor Module provides true infrared thermal detection specifically calibrated for moving bodies, such as owner hand movement or pets approaching the bowl. Because it features built-in signal conditioning and adjustable sensitivity potentiometers, it outputs a clean, chatter-free digital high signal directly to the microcontroller without requiring complex software filtering or sensitivity to ambient room light changes.
+**Rationale:** The TT Electronics OPB732 reflective optical switch was selected for subsystem to provide reliable, non-contact motion and position sensing while maintaining clean integration with the central microcontroller architecture, while also having a proof on concept of function as it was used in a previous lab.
 
 ---
 
