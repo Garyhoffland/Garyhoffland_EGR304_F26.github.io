@@ -76,8 +76,7 @@ title: Component Selection
 
 1. OPB732 Reflective Optical Sensor
 
-    ![](<img width="795" height="558" alt="image" src="https://github.com/user-attachments/assets/fa38463e-a71f-4ef3-bd6a-005e95190aeb" />
-)
+    ![](image_2026-10-28_160627492.png)
 
     * $4.61 / each
     * [Datasheet](https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Datasheet/OPB732.pdf)
