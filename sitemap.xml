@@ -36,11 +36,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/</loc>
-         <lastmod>2026-10-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/esp-32-table/</loc>
          <lastmod>2026-10-29</lastmod>
          <changefreq>daily</changefreq>
