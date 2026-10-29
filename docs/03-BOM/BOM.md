@@ -9,7 +9,7 @@ tags:
 ## Overview
 This Bill of Materials details all electronic components, connectors, power regulation stages, and electro-mechanical hardware required to assemble the custom non-contact optical sensing and processing subsystem. All unit pricing and vendor links correspond to active DigiKey stock items to support immediate procurement.
 
-## Bill of Materials Example (as Table)
+## Bill of Materials Table
 
 *Table 1: Subsystem Component Specifications and Procurement Details.*
 
@@ -33,7 +33,7 @@ This Bill of Materials details all electronic components, connectors, power regu
 | 8-Pin Single Row 0.1" (2.54mm) Male Header | 1 | $0.48 | $0.48 | Peralta 109 | N/A | N/A | N/A | J3 |
 
 
-## Screenshot of Sheet
+## Bill of Materials Screenshot
 <img width="1496" height="582" alt="image" src="https://github.com/user-attachments/assets/5de5c745-f537-4acc-9509-ab316ea425d0" />
  <img width="1457" height="582" alt="image" src="https://github.com/user-attachments/assets/d725f37d-fa7e-42d3-bbcc-aa11441bf31b" />
 
