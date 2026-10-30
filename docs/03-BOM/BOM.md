@@ -34,8 +34,8 @@ This Bill of Materials details all electronic components, connectors, power regu
 
 
 ## Bill of Materials Screenshot
-<img width="1496" height="582" alt="image" src="https://github.com/user-attachments/assets/5de5c745-f537-4acc-9509-ab316ea425d0" />
- <img width="1457" height="582" alt="image" src="https://github.com/user-attachments/assets/d725f37d-fa7e-42d3-bbcc-aa11441bf31b" />
+<img width="1486" height="580" alt="image" src="https://github.com/user-attachments/assets/27a38ea2-9647-4fa7-a133-f8526785529b" />
+ <img width="1481" height="580" alt="image" src="https://github.com/user-attachments/assets/c42b11b5-58cd-4d18-9eff-0ab6caee57a2" />
 
 
 
