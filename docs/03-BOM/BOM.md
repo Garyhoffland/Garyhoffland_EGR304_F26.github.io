@@ -27,15 +27,15 @@ This Bill of Materials details all electronic components, connectors, power regu
 | Reflective Optical Flag Sensor Module | 1 | $4.61 | $4.61 | TT Electronics | OPB732 | [DigiKey](https://www.digikey.com/en/products/detail/tt-electronics-optek-technology/OPB732/1637069) | [Datasheet](https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Datasheet/OPB732.pdf) | J2 |
 | General Purpose Quad Op-Amp, DIP-14 | 1 | $0.62 | $0.62 | Texas Instruments | LM324N | [DigiKey](https://www.digikey.com/en/products/detail/texas-instruments/LM324N/277042) | [Datasheet](https://www.ti.com/lit/ds/symlink/lm324.pdf) | U2 (GH-LM324N1) |
 | PIC18F57Q43 Curiosity Nano Evaluation Board | 1 | $21.85 | $21.85 | Microchip Technology | DM164150 | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/DM164150/13540093) | [Datasheet](https://www.microchip.com/en-us/development-tool/dm164150) | U3 (GH-PIC18F57Q1) |
-| Piezoelectric Audio Transducer Buzzer, 4kHz | 1 | $1.72 | $1.72 | Soberton Inc. | PT-1407 | [DigiKey](https://www.digikey.com/en/products/detail/soberton-inc/PT-1407/9924300) | [Datasheet](https://www.soberton.com/products/pt-1407) | BZ1 |
+| Piezoelectric Audio Transducer Buzzer, 4kHz | 2 | $1.72 | $3.44 | Soberton Inc. | PT-1407 | [DigiKey](https://www.digikey.com/en/products/detail/soberton-inc/PT-1407/9924300) | [Datasheet](https://www.soberton.com/products/pt-1407) | BZ1 |
 | Standard Red LED, 625nm, 20mA, 5mm Through-Hole | 1 | $0.25 | $0.25 | Open Source Upgraded Electronic Fun Kit | N/A | N/A | N/A | D1 |
 | SPST OFF-(ON) Tactile Pushbutton Switch | 1 | $0.32 | $0.32 | Open Source Upgraded Electronic Fun Kit | N/A | N/A | N/A | SW1 |
 | 8-Pin Single Row 0.1" (2.54mm) Male Header | 1 | $0.48 | $0.48 | Peralta 109 | N/A | N/A | N/A | J3 |
 
 
 ## Bill of Materials Screenshot
-<img width="1486" height="580" alt="image" src="https://github.com/user-attachments/assets/27a38ea2-9647-4fa7-a133-f8526785529b" />
- <img width="1481" height="580" alt="image" src="https://github.com/user-attachments/assets/c42b11b5-58cd-4d18-9eff-0ab6caee57a2" />
+<img width="1491" height="582" alt="image" src="https://github.com/user-attachments/assets/47dc6700-4d65-4da5-a0fa-56f3bb34778b" />
+ <img width="1477" height="580" alt="image" src="https://github.com/user-attachments/assets/6b0477e1-137a-4fac-8fba-734b2cac2bba" />
 
 
 
