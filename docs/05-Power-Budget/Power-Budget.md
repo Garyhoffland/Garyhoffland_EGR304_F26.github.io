@@ -9,6 +9,20 @@ tags:
 ## Overview
 A comprehensive Power Budget was performed for the custom non-contact optical sensing and signal processing subsystem (Team 104) to evaluate total current requirements across all active devices and operational states. Operating from a 9V PP3 transistor battery supply connected through a J1 barrel jack connector, the power rail feeds an LM7805 linear voltage regulator (U1) to establish a stable +5V rail. The power budget verifies that peak current consumption remains within safe bounds for the LM7805 regulator, preserves sufficient headroom for the 0.5A inline fuse (F1), and guarantees reliable continuous power delivery to the PIC18F57Q43 microcontroller, op-amp signal conditioning circuitry, optical sensor, and alert indicators.
 
+## Pin Table
+
+*Table 1: PIC18F57Q43 Pin Assignments and Subsystem Hardware Mapping.*
+
+| PIC18F57Q43 Pin | Component | Function |
+|:---|:---|:---|
+| RA0 | LM324 Op-Amp (OPB732 Signal) | Analog input (ADC distance sensor signal) |
+| RA1 | PT-1407 Piezo Buzzer (BZ1) | Digital output (PWM audio alert drive) |
+| RD0 | Debug Red LED (D1) | Digital output (Status indicator) |
+| RD1 | Pushbutton Switch (SW1) | Digital input (User debug button) |
+| RD2 | Header Connector (J3 Pin 1) | Digital output (Trigger signal to motor board) |
+| VDD | +5V Rail (L7805 Regulator) | +5V Power supply input |
+| GND | Common Ground / Earth | Common system ground reference |
+
 
 <img width="1163" height="655" alt="image" src="https://github.com/user-attachments/assets/c662ef32-3796-47ac-a0f9-0631cab1441f" />
 
