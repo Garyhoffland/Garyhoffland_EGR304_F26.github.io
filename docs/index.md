@@ -9,7 +9,7 @@ tags:
 <center>
 <font size= "6">Gary Hoffland Datasheet</font><br>
 as part of<br>
-<font size= "8"> Autonomous Navigation System</font><br>
+<font size= "8"> Advanced Innovation Project</font><br>
 for<br>
 <font size= "5"> Team 101 </font><br>
 
