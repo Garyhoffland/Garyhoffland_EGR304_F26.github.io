@@ -55,4 +55,4 @@ Key findings from this analysis include:
 
 ## Resources
 
-The power budget as a PDF download is available [here](PowerBudgetExample.pdf), and a Microsoft Excel Sheet [here](PowerBudgetExample.xlsx).
+The power budget as a PDF download is available [here](EGR304PowerBudget.pdf), and a Microsoft Excel Sheet [here](PowerBudgetGaryHoffland.xlsx).
