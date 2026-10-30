@@ -172,7 +172,7 @@ title: Component Selection
 
     ![](image_2026-10-16_155422374.png)
 
-    * $1.18 / each
+    * $1.72 / each
     * [DigiKey Product Page](https://www.digikey.com/en/products/detail/soberton-inc/PT-1407/1245311)
 
     | Pros | Cons |
