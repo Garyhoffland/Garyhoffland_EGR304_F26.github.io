@@ -14,4 +14,4 @@ title: PCB Design
 
 ## Resouces
 
-The PCB top layer as a PDF download is available [*here*](SubsystemDesign-B_Cu.pdf), the PCB bottom layer as a PDF download is available [*here*](SubsystemDesign-B_Cu.pdf), and the Zip folder of the ECAD project [*here*](GR_304_Subsystem_Design.zip).
+The PCB top layer as a PDF download is available [*here*](SubsystemDesign-B_Cu.pdf), the PCB bottom layer as a PDF download is available [*here*](SubsystemDesign-B_Cu.pdf), and the Zip folder of the ECAD project [*here*](SubsystemDesigngbr.zip).
